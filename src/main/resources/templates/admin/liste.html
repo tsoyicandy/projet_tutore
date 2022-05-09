@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<style>
+    .card {
+        background-color: #F7F7F7;
+        background-image: none;
+        border-color: #f7f7f7!important;
+        box-shadow: 0 2px 6px rgb(58 57 68 / 18%);
+    }
+</style>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom " style="background-color: rgba(36, 138, 253, 0.2);"><i class="fas fa-car" style="color:rgb(0, 162, 255);"></i>&nbsp;&nbsp;CAR ADMIN</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../administration.html"> <i class="fas fa-home"></i>&nbsp;&nbsp; Dashboard</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="liste.html"><i class="fas fa-newspaper"></i>&nbsp;&nbsp;Publications</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
+
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-secondary  btn-sm" id="sidebarToggle"> <i class="fas fa-toggle-off"></i> Toggle Menu</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link" href="#!">Retour sur le Site</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Yannick&nbsp;&nbsp;</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#!">Profile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#!">Deconnexion</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container">
+                <div class="text m-3">
+                    <h2 class="text-center text-secondary mt-3">Liste des différents Publications</h2>
+                </div>
+
+                <div class="col-md-4 m-auto mt-3">
+                    <div class="input-group m-auto">
+                        <div class="form-outline">
+                            <input type="search" id="form1" class="form-control" placeholder="Réchercher..." />
+
+                        </div>
+                        <button type="button" class="btn btn-secondary">
+                          <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-10 text-center m-auto mt-4">
+                        <table class="table">
+
+                            <tbody>
+                                <tr class="text-bold bg-light">
+                                    <th scope="row">ID</th>
+                                    <td>NOM</td>
+                                    <td>TITRE</td>
+                                    <td>DESCRIPTION</td>
+                                    <td>Date</td>
+                                    <td>Categories</td>
+                                    <td>Photos</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>
+                                        <a href="modifier.html" class="btn btn-primary btn-circle btn-sm">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-success btn-circle btn-sm">
+                                            <i class="fas fa-check"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>
+                                        <a href="modifier.html" class="btn btn-primary btn-circle btn-sm">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-success btn-circle btn-sm">
+                                            <i class="fas fa-check"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>
+                                        <a href="modifier.html" class="btn btn-primary btn-circle btn-sm">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-success btn-circle btn-sm">
+                                            <i class="fas fa-check"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- Bootstrap core JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Core theme JS-->
+            <script src="../js/scripts.js"></script>
+</body>
+
+</html>

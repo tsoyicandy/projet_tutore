@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="topbar">
+
+    <div class="col-9  text-right">
+
+        <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a></span>
+
+        <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+            <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                <li><a th:href="@{/}" class="nav-link">Accueil</a></li>
+
+                <th:block sec:authorize="isAuthenticated()">
+                    <li class="active"><a th:href="@{/liste_voiture}" class="nav-link">Voitures</a></li>
+
+                    <li><a th:href="@{/ajoutvoiture}" class="nav-link">Ajouter Voiture</a></li>
+                    <li><a th:href="@{/liste1}" class="nav-link">Réservations</a></li>
+
+                </th:block>
+                <th:block sec:authorize="isAnonymous()">
+                    <li><a th:href="@{/connexion}" class="nav-link">Se Connecter</a></li>
+                </th:block>
+
+            </ul>
+        </nav>
+    </div>
+
+</th:block>
+
+</html>
